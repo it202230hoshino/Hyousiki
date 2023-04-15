@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hyousiki">
+        <item>@drawable/rds_031</item>
+        <item>@drawable/rds_032</item>
+        <item>@drawable/rds_061</item>
+        <item>@drawable/rds_010</item>
+        <item>@drawable/rds_083</item>
+        <item>@drawable/rds_082</item>
+        <item>@drawable/rds_049</item>
+        <item>@drawable/rds_001</item>
+        <item>@drawable/rds_002</item>
+        <item>@drawable/rds_048</item>
+        <item>@drawable/rds_003</item>
+        <item>@drawable/rds_019</item>
+        <item>@drawable/rds_051</item>
+        <item>@drawable/rds_033</item>
+        <item>@drawable/rds_060</item>
+        <item>@drawable/rds_052</item>
+        <item>@drawable/rds_050</item>
+        <item>@drawable/rds_085</item>
+        <item>@drawable/rds_054</item>
+    </array>
+</resources>

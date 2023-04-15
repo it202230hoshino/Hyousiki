@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAFFD0"
+    android:orientation="vertical"
+    tools:context=".Bingo3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_marginTop="20sp"
+            android:layout_width="200dip"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tokuten" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="-60dp"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <!--    ビンゴエリア-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="460dp"
+            android:background="#ff8856"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bingotext" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="みつけたひょうしきをタッチ!"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+<!--ビンゴ３＊３-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageButton
+                            android:id="@+id/b1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/b4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b6"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/b7"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b8"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:id="@+id/b9"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:background="#ffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/return1"-->
+        <!--            android:layout_width="85dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/modoru" />-->
+        <Button
+            android:id="@+id/return1"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="もどる"
+            app:backgroundTint="#FF9800"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/shuffle"
+            />
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+
+            android:background="@drawable/shuffle" />
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/buttonResult"-->
+        <!--            android:layout_width="85dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginBottom="-5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/finish"-->
+        <!--            android:text="結果" />-->
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            app:backgroundTint="#FF9800"
+            android:textColor="#ffffff"
+            android:background="@drawable/shuffle"
+            android:text="おわる" />
+
+
+
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="580dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:weightSum="4">-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/return1"-->
+    <!--            android:layout_width="85dp"-->
+    <!--            android:layout_height="65dp"-->
+    <!--            android:layout_alignParentLeft="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:background="@drawable/modoru"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="戻る" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:layout_width="85dp"-->
+    <!--            android:layout_height="65dp"-->
+    <!--            android:id="@+id/buttonResult"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_marginStart="25dp"-->
+    <!--            android:background="@drawable/finish"-->
+    <!--            android:layout_marginBottom="-5dp"-->
+    <!--            android:text="結果"/>-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/reset"-->
+    <!--            android:layout_width="85dp"-->
+    <!--            android:layout_height="65dp"-->
+    <!--            android:layout_alignParentLeft="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_marginStart="25dp"-->
+    <!--            android:background="@drawable/shuffle"-->
+    <!--            android:text="リセット" />-->
+
+</LinearLayout>

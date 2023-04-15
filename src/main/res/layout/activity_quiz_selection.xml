@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAFFD0"
+    android:orientation="vertical"
+    tools:context=".SizeSelection">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="どのクイズにする?"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+
+    <ImageButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageButton"
+        android:layout_width="320dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center"
+        android:background="@drawable/imiquiz" />
+
+    <ImageButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="320dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center"
+        android:background="@drawable/namequiz" />
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:text="もどる"
+        android:textSize="18sp"
+        app:backgroundTint="#FF9800"
+        android:background="@drawable/tuduki" />
+<!--    <ImageButton-->
+<!--        android:layout_marginTop="30sp"-->
+<!--        android:id="@+id/imageButton3"-->
+<!--        android:layout_width="100sp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/tuduki" />-->
+</LinearLayout>

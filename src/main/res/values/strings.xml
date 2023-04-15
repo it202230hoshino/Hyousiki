@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Hyousiki</string>
+    <string name="question_label">問題文</string>
+    <string name="count_label">Q%d</string>
+    <string name="answer_btn">選択肢</string>
+
+    <string name="result_title">結果</string>
+    <string name="result_score">%d / 5</string>
+    <string name="result_total_score">トータルスコア %d問正解</string>
+    <string name="btn_return">もどる</string>
+
+
+
+
+    <string-array name="list">
+        <item></item>
+        <item>自転車専用</item>
+        <item>自転車専用及び歩行者専用</item>
+        <item>自転車横断帯</item>
+        <item>自転車通行止め</item>
+        <item>学校幼稚園保育所あり</item>
+        <item>踏切あり</item>
+        <item>一時停止</item>
+        <item>通行止め</item>
+        <item>車両通行止め</item>
+        <item>徐行</item>
+        <item>車両進入禁止</item>
+        <item>転回禁止</item>
+        <item>歩行者横断禁止</item>
+        <item>歩行者専用</item>
+        <item>横断歩道</item>
+        <item>並進可</item>
+        <item>歩行者通行止め</item>
+        <item>すべりやすい</item>
+        <item>駐車可</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
+
+

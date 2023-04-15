@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="UsingOnClickInXml"
+    android:background="#EAFFD0"
+    android:privateImeOptions="com.google.android.inputmethod.latin.requestPhoneticOutput"
+    tools:context=".QuizActivity">
+
+    <ImageButton
+        android:id="@+id/modoru"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/modoru3"
+        android:layout_marginStart="-140dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count_label"
+        android:textSize="22sp" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/questionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="このひょうしきは何？"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:textSize="24sp"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="きりかえ"
+        android:layout_marginLeft="120dip"
+        android:backgroundTint="#cc66ff"
+        android:layout_marginTop="30dip"/>
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="選択肢"
+        android:layout_marginTop="10dip"
+        android:inputType="textPersonName"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="#ff3366"
+        android:textColor="#ffffff"
+        android:onClick="checkAnswer" />
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="選択肢"
+        android:layout_marginTop="6dp"
+        android:inputType="textPersonName"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="#00ccff"
+        android:textColor="#ffffff"
+        android:onClick="checkAnswer" />
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="選択肢"
+        android:layout_marginTop="6dp"
+        android:inputType="textPersonName"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="#ffcc00"
+        android:textColor="#ffffff"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="選択肢"
+        android:layout_marginTop="6dp"
+        android:inputType="textPersonName"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="#00ee00"
+        android:textColor="#ffffff"
+        android:onClick="checkAnswer"/>
+
+</LinearLayout>
